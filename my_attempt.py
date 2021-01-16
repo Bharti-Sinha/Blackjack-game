@@ -13,7 +13,7 @@ def computer():
     while sum(dealer) < 17:
         deal(dealer)
 
-    if sum(dealer) == 21:  # added this - Rushi
+    if sum(dealer) == 21: 
         print(f"Your cards: {user}, current score: {sum(user)}")
         print(f"Computer final hand: {dealer}, current score: {sum(dealer)}")
         print("Computer had a black jack, You lose!")
@@ -60,7 +60,7 @@ def start_game():
         choice()
 
     # check if the user has blackjack
-    elif sum(user) == 21:  # this was previously sum(dealer) changed it! - Rushi
+    elif sum(user) == 21: 
         print(f"Your cards: {user}, current score: {sum(user)}")
         print(f"Computer final hand: {dealer}, current score: {sum(dealer)}")
         print("You had a black jack, You Win!")
@@ -82,7 +82,7 @@ def start_game():
                     status()
                     print('BLACKJACK! You win!')
                     choice()
-                else:  # addded this condition - Rushi
+                else: 
                     start_game()
             else:
 
@@ -103,7 +103,7 @@ def start_game():
             elif next_move == 'n':
                 status()
                 computer()
-            else:  # added this condition - Rushi
+            else:  
                 print("Please enter a valid input. Type 'y' or 'n'.")
                 start_game()
 
@@ -121,7 +121,7 @@ def choice():
             user.append(random.choice(cards))
             dealer.append(random.choice(cards))
         start_game()
-    if inp == 'n':  # added this condition - Rushi
+    if inp == 'n':
         print("Thank you for wasting time!")
         print("Created by: Bharti Sinha")
 
